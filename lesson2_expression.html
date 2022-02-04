@@ -1,0 +1,23 @@
+<div id="data">
+    <p>{{`My name is ${name}.I am ${age} years old and I am ${job} . My Wife name is ${wife} . She is ${wifeJob} `}}</p>
+    <h1>{{isMale? 'He is male' : "No , He is not male"}}</h1>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+<script>
+    new Vue({
+        el:"#data",
+        data:function(){
+            return{
+                name:"ThawZinSoe",
+                age : 21 ,
+                job : "Web Developer",
+                wife : "Thiri San",
+                wifeJob : "Customer Service",
+                isMale : true ,
+            }
+        }
+    });
+</script>
