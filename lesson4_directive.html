@@ -1,4 +1,14 @@
-<div id="app">{{name}}</div>
+<div id="app">
+    <p v-if="fruit=='Orange'">Orange</p>
+    <p v-else-if="fruit=='Apple'">Apple</p>
+    <p v-else-if="fruit=='Mango'">Mango</p>
+    <p v-else>No</p>
+    <p v-show="isShow">OK</p>
+    <p v-text="message"></p>
+    <p v-html="htmlText"></p>
+    <input type="text" v-model="something">
+    <p>{{something}}</p>
+</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
@@ -8,7 +18,11 @@
         el:"#app",
         data:function(){
             return{
-                name:"ThawZinSoe",
+                fruit:"Apple",
+                isShow : false,
+                message : "I love thirisan ",
+                htmlText : "<i> OK </i>",
+                something : "",
             }
         }
     });
