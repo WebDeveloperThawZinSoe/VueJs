@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Form Leeson</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        HTML <input type="checkbox" value="HTML" v-model="char"> <br> <br>
+        CSS <input type="checkbox" value="CSS" v-model="char"> <br> <br>
+        JavaScript <input type="checkbox" value="JavaScript" v-model="char"> <br> <br>
+        PHP <input type="checkbox" value="PHP" v-model="char"> <br> <br>
+        {{char}}
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            data:function(){
+                return{
+                    char:[],
+                }
+            }
+        })
+    </script>
+</body>
+</html>
